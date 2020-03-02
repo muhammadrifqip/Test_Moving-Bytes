@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>STOCK MANAGEMENT</title>
+    </head>
+
+    <body>
+        <h1>STOCK MANAGEMENT</h1>
+        <fieldset>
+
+            <legend>Buat Gudang</legend>
+        
+            <label>ID:</label>
+            <input type="text" id="txt-number">
+        
+            <label>Jumlah Stock:</label>
+            <input type="text" id="txt-stock"><br />
+        
+            <button onclick="add('txt-number','txt-stock')">Tambah</button>
+        
+        </fieldset>
+
+        <fieldset>
+            <table id="table" border="1">
+                <tr>
+                    <th>ID Gudang</th>
+                    <th>Stock</th>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Masukan Barang</legend>
+        
+            <label>ID_Gudang:</label>
+            <input type="text" id="ambil_gudang">
+
+            <label>Barang:</label>
+            <input type="text" id="ambil_barang">
+        
+            <label>Jumlah:</label>
+            <input type="text" id="ambil_jumlah"><br />
+        
+            <button onclick="ambil('ambil_gudang','ambil_barang','ambil_jumlah')">Tambah</button>
+        </fieldset>
+
+        <fieldset>
+            <table id="table_ambil" border="1">
+                <tr>
+                    <th>ID Gudang</th>
+                    <th>Barang</th>
+                    <th>Jumlah</th>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ambil Barang</legend>
+        
+            <label>ID_Gudang:</label>
+            <input type="text" id="get_gudang">
+
+            <label>Barang:</label>
+            <input type="text" id="get_barang">
+        
+            <label>Jumlah:</label>
+            <input type="text" id="get_jumlah"><br />
+        
+            <button onclick="getBarang('get_gudang','get_barang','get_jumlah')">Tambah</button>
+        </fieldset>
+
+        <fieldset>
+            <table id="table_get" border="1">
+                <tr>
+                    <th>ID Gudang</th>
+                    <th>Barang</th>
+                    <th>Jumlah</th>
+                </tr>
+            </table>
+        </fieldset>
+
+
+
+        
+        <script src="exercise2.js"></script>
+    </body>
+</html>
